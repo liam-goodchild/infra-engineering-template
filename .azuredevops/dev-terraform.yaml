@@ -16,11 +16,12 @@ parameters:
   - name: terraformAction
     displayName: Terraform Action
     type: string
+    default: Plan
     values: [Plan, Apply, Destroy]
   - name: environment
     displayName: Environment
     type: string
-    values: [Prod]
+    values: [Dev, Prod]
   - name: additionalTfVars
     displayName: Additional Terraform Variables
     type: string

@@ -16,7 +16,7 @@ parameters:
   - name: environment
     displayName: Environment
     type: string
-    values: [Dev, Prod]
+    default: Prod
   - name: confirmDestroy
     displayName: 'Type "DESTROY" to confirm'
     type: string
