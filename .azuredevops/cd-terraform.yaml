@@ -23,7 +23,7 @@ parameters:
   - name: environment
     displayName: Environment
     type: string
-    values: [Dev, Prod]
+    default: Prod
   - name: additionalTfVars
     displayName: Additional Terraform Variables
     type: string
