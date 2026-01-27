@@ -1,4 +1,4 @@
-resource "null_resource" "placeholder" {
+resource "null_resource" "test_resource" {
   triggers = {
     prefix       = local.prefix
     prefix_short = local.prefix_short
