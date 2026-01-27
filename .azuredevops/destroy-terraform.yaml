@@ -79,4 +79,3 @@ stages:
               globalTfvars: $(globalTfvars)
               additionalCommandOptions: ${{ parameters.additionalTfVars }}
               ensureBackendContainer: false
-              

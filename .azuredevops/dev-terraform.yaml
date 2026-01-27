@@ -62,4 +62,3 @@ stages:
               envTfvars: $(tfvars)
               globalTfvars: $(globalTfvars)
               additionalCommandOptions: ${{ parameters.additionalTfVars }}
-              

@@ -109,4 +109,3 @@ stages:
             parameters:
               defaultAction: patch
               defaultBranch: main
-              
