@@ -5,7 +5,7 @@ locals {
   location = local.locations[var.location]
   environment_short = {
     dev = "D"
-    prd  = "P"
+    prd = "P"
   }
   prefix       = "${var.project}-core-${var.environment}-${local.location}"
   prefix_short = "${var.project}core${local.environment_short[var.environment]}${local.location}"

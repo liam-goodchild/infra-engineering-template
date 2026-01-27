@@ -28,8 +28,8 @@ parameters:
 
 variables:
   # Container, Service Connection & tfvars
-  backendContainerName: PLACEHOLDER
-  serviceConnectionName: PLACEHOLDER
+  backendContainerName: infra-template-base
+  serviceConnectionName: sh-sc-base
   globalTfvars: infra/vars/globals.tfvars
   tfvars: infra/vars/uks/$(environmentCode).tfvars
   # State Management
@@ -79,4 +79,3 @@ stages:
               globalTfvars: $(globalTfvars)
               additionalCommandOptions: ${{ parameters.additionalTfVars }}
               ensureBackendContainer: false
-              
