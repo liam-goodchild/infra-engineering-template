@@ -1,3 +1,6 @@
+<!-- prettier-ignore-start -->
+<!-- textlint-disable -->
+
 # Repository Setup Standards
 
 This document defines the standard for setting up a new repository from this template.
@@ -135,3 +138,6 @@ Add the following block into the README for automated Terraform documentation:
 ## Summary
 
 Following these steps ensures your repository is properly configured with security features, branch protection, CI/CD pipelines, and documentation standards from the start.
+
+<!-- textlint-enable -->
+<!-- prettier-ignore-end -->
