@@ -140,7 +140,7 @@ Add the following block into the README for automated Terraform documentation:
 
 | Name | Type |
 |------|------|
-| [null_resource.placeholder](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [null_resource.test_resource](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 
 ## Modules
 
