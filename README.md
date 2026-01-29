@@ -130,6 +130,34 @@ Following these steps ensures your repository is properly configured with securi
 ## Placeholder Terraform Documentation
 
 <!-- BEGIN_TF_DOCS -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0, < 2.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0, < 5.0 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.0, < 4.0 |
+
+## Resources
+
+No resources.
+
+## Modules
+
+No modules.
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_environment"></a> [environment](#input\_environment) | Name of Azure environment. | `string` | n/a | yes |
+| <a name="input_location"></a> [location](#input\_location) | Resource location for Azure resources. | `string` | n/a | yes |
+| <a name="input_project"></a> [project](#input\_project) | Project short name. | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Environment tags. | `map(string)` | n/a | yes |
+
+## Outputs
+
+No outputs.
 <!-- END_TF_DOCS -->
 
 <!-- textlint-enable -->
