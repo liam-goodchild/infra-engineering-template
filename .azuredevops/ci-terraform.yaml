@@ -14,7 +14,7 @@ resources:
       type: github
       name: liam-goodchild/pipeline-engineering-templates
       endpoint: liam-goodchild
-      ref: refs/heads/patch/prettier-ignore
+      ref: refs/heads/main
 
 pool:
   vmImage: ubuntu-latest
