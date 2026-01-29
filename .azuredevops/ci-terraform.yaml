@@ -14,7 +14,7 @@ resources:
       type: github
       name: liam-goodchild/pipeline-engineering-templates
       endpoint: liam-goodchild
-      ref: refs/heads/main
+      ref: refs/heads/patch/prettier-ignore
 
 pool:
   vmImage: ubuntu-latest
@@ -57,6 +57,7 @@ stages:
           - template: validation/linting.yaml@templates
             parameters:
               prettierConfigFile: .prettierrc.json
+              prettierIgnoreFile: .prettierignore
               checkovConfigFile: .checkov.yaml
               tflintConfigFile: .tflint.hcl
 
