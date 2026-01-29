@@ -127,8 +127,7 @@ Parse the repo to get a better understanding of the code but do not create any T
 
 Following these steps ensures your repository is properly configured with security features, branch protection, CI/CD pipelines, and documentation standards from the start.
 
-<!-- textlint-enable -->
-<!-- prettier-ignore-end -->
+## Placeholder Terraform Documentation
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -160,3 +159,6 @@ No modules.
 
 No outputs.
 <!-- END_TF_DOCS -->
+
+<!-- textlint-enable -->
+<!-- prettier-ignore-end -->
