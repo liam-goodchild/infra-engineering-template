@@ -98,13 +98,13 @@ https://raw.githubusercontent.com/liam-goodchild/docs-engineering-standards/main
 
 ## 5. Create CI/CD Pipelines, Service Principals and Service Connections
 
-Create the CI/CD pipelines in the relevant folder within Azure DevOps, ensuring that the CD pipeline has pull request validation manually disabled before opening a PR. Create the necessary service principals and service connections and ensure appropriate RBAC is granted.
+Create the CI/CD pipelines in the relevant folder within Azure DevOps. Create the necessary service principals and service connections and ensure appropriate RBAC is granted.
 
 ---
 
 ## 6. Update Pipeline Placeholders
 
-Update placeholder container and service connection names in the various pipelines with the generated values.
+Update placeholder container and service connection names in the various pipelines with the correct values.
 
 ---
 
@@ -114,19 +114,21 @@ Once the code in the repository is in a working state, generate a README using t
 
 ```text
 The repository is for [description of your project].
+
 Generate a README for my new repository following the template at:
 https://raw.githubusercontent.com/liam-goodchild/docs-engineering-standards/main/readme-standards/README.md
+
+Parse the repo to get a better understanding of the code but do not create any Terraform-specific information as this is automatically injected via TF Docs. The template README contains the block that should be put at the end to ensure Terraform documentation is injected.
 ```
 
 ---
 
-## 8. Add Terraform Documentation Block
+## Summary
 
-Add the following block into the README for automated Terraform documentation:
+Following these steps ensures your repository is properly configured with security features, branch protection, CI/CD pipelines, and documentation standards from the start.
 
-```text
-<!-- prettier-ignore-start -->
-<!-- textlint-disable -->
+## Placeholder Terraform Documentation
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -138,9 +140,7 @@ Add the following block into the README for automated Terraform documentation:
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [null_resource.test_resource](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+No resources.
 
 ## Modules
 
@@ -159,15 +159,6 @@ No modules.
 
 No outputs.
 <!-- END_TF_DOCS -->
-<!-- textlint-enable -->
-<!-- prettier-ignore-end -->
-```
-
----
-
-## Summary
-
-Following these steps ensures your repository is properly configured with security features, branch protection, CI/CD pipelines, and documentation standards from the start.
 
 <!-- textlint-enable -->
 <!-- prettier-ignore-end -->
