@@ -2,6 +2,3 @@ rules:
   unpinned-uses:
     ignore:
       - actions/checkout
-  artipacked:
-    ignore:
-      - .github/workflows/tag.yml # persist-credentials required — workflow pushes git tags
