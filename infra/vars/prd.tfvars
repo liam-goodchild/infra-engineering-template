@@ -1,8 +1,4 @@
 #########################################
-# Generic
+# PLACEHOLDER
 #########################################
-environment = "dev"
-location    = "uksouth"
-
-tags = {
-}
+environment = "prd"
