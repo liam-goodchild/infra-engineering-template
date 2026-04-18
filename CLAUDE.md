@@ -34,12 +34,12 @@ terraform -chdir=infra destroy -var-file="vars/globals.tfvars" -var-file="vars/p
 
 All `.tf` files live under `infra/`. Underscore-prefixed files hold specific block types only:
 
-| File | Block type |
-|------|-----------|
+| File            | Block type     |
+| --------------- | -------------- |
 | `_terraform.tf` | `terraform {}` |
-| `_providers.tf` | `provider` |
-| `_variables.tf` | `variable` |
-| `_locals.tf` | `locals` |
+| `_providers.tf` | `provider`     |
+| `_variables.tf` | `variable`     |
+| `_locals.tf`    | `locals`       |
 
 `infra/vars/globals.tfvars` holds shared values (`workload`). Environment files (`dev.tfvars`, `prd.tfvars`) hold values that differ per env. Both are always passed together to Terraform.
 
