@@ -66,8 +66,8 @@ All resources also inherit `local.tags` (`managed-by = "terraform"`).
 
 State backend is environment-specific:
 
-| Env | Resource Group | Storage Account |
-| --- | -------------- | --------------- |
+| Env | Resource Group               | Storage Account         |
+| --- | ---------------------------- | ----------------------- |
 | dev | `rg-tfs-platform-dev-uks-01` | `sttfsplatformdevuks01` |
 | prd | `rg-tfs-platform-prd-uks-01` | `sttfsplatformprduks01` |
 
@@ -77,11 +77,11 @@ Each repo gets its own container named after the repository. The `ensure-tfstate
 
 GitHub environment secrets needed by the pipelines:
 
-| Secret | Used for |
-| ------ | -------- |
-| `AZURE_CLIENT_ID` | OIDC workload identity federated credential |
-| `AZURE_SUBSCRIPTION_ID` | Target subscription for ARM provider |
-| `AZURE_TENANT_ID` | OIDC tenant |
+| Secret                           | Used for                                                |
+| -------------------------------- | ------------------------------------------------------- |
+| `AZURE_CLIENT_ID`                | OIDC workload identity federated credential             |
+| `AZURE_SUBSCRIPTION_ID`          | Target subscription for ARM provider                    |
+| `AZURE_TENANT_ID`                | OIDC tenant                                             |
 | `AZURE_PLATFORM_SUBSCRIPTION_ID` | Platform subscription hosting the state storage account |
 
 ## Checkov Skips
