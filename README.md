@@ -1,3 +1,3 @@
 # infra-engineering-template
 
-GitHub template repository for Sky Haven Azure infrastructure projects. Provides a standardised Terraform scaffold with pre-configured pipelines for linting, plan/apply/destroy, and automated semantic versioning via branch-name conventions (`major/**`, `minor/**`, `patch/**`). Use this as the starting point when creating a new `infra-*` repository.
+Template repository for Sky Haven Azure infrastructure projects. It provides a standard Terraform project scaffold and repository automation so new infrastructure repos start with consistent naming, validation, deployment, and versioning conventions.
